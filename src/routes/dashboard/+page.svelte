@@ -219,7 +219,7 @@
 		border-radius: 0.5rem;
 		flex: 1;
 		color: white;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		border: 3px solid rgb(6, 6, 78);
 		border-radius: 0.5rem;
 	}
@@ -239,7 +239,7 @@
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
 		cursor: pointer; /* changes the cursor to a pointer (hand) when hovering over the button */
-		font-size: 0.8rem;
+		font-size: 1rem;
 		font-weight: bold;
 	}
 
