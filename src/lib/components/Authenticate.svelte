@@ -266,6 +266,7 @@
 		color: rgb(91, 159, 255);
 		background: none;
 		border: none;
+		font-weight: bold;
 	}
 
 	.divider {

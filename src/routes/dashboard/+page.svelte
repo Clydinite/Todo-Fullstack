@@ -240,6 +240,7 @@
 		border-radius: 0.5rem;
 		cursor: pointer; /* changes the cursor to a pointer (hand) when hovering over the button */
 		font-size: 0.8rem;
+		font-weight: bold;
 	}
 
 	.enter-todo button:hover {
@@ -255,8 +256,7 @@
 			display: none;
 		}
 
-		.header-buttons button,
-		.enter-todo button {
+		.header-buttons button {
 			font-size: 1rem;
 		}
 	}
