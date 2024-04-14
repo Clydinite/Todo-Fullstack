@@ -107,6 +107,10 @@
 </div>
 
 <style>
+	h1 {
+		font-size: 2rem;
+	}
+
 	.main-container {
 		display: flex;
 		flex-direction: column;
@@ -227,5 +231,18 @@
 
 	.enter-todo button:hover {
 		background: rgb(91, 159, 255);
+	}
+
+	@media (max-width: 640px) {
+		h1 {
+			font-size: 1.5rem;
+			text-wrap: nowrap;
+		}
+
+		.header-buttons button,
+		.enter-todo button {
+			font-size: 0.8rem;
+			text-wrap: nowrap;
+		}
 	}
 </style>

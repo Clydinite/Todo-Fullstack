@@ -143,7 +143,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.2rem; /* rem means relative to the font-size of the root element */
-		width: 400px;
+		width: 350px;
 		max-width: 100%;
 		margin: 0 auto;
 		padding: 1rem;
@@ -247,7 +247,7 @@
 
 	.options {
 		padding: 1rem 0;
-		width: 400px;
+		width: 350px;
 		max-width: 100%;
 		margin: 0 auto;
 		padding: 1rem;
