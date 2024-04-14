@@ -46,9 +46,14 @@
 				on:click={() => {
 					saveTodos();
 					console.log('saving', $authStore);
-				}}><Icon icon="material-symbols:save" />Save</button
+				}}
+				><Icon icon="material-symbols:save" />
+				<p>Save</p></button
 			>
-			<button on:click={authHandlers.logout}><Icon icon="material-symbols:logout" />Logout</button>
+			<button on:click={authHandlers.logout}
+				><Icon icon="material-symbols:logout" />
+				<p>Logout</p></button
+			>
 		</div>
 	</div>
 
@@ -102,7 +107,7 @@
 
 	<div class="enter-todo">
 		<input bind:value={currentTodo} type="text" name="" id="" placeholder="Enter Todo" />
-		<button on:click={addTodo}>Add Todo</button>
+		<button on:click={addTodo}>Add</button>
 	</div>
 </div>
 
@@ -172,14 +177,22 @@
 
 	.todo div {
 		display: flex;
+		align-items: center;
 		gap: 0.75rem;
 	}
 
 	.todo div p:first-of-type {
 		background: rgb(91, 159, 255);
 		width: 2rem;
-		text-align: center;
 		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: min-content
+	}
+
+	.todo div p:last-of-type {
+		flex: 1;
 	}
 
 	.actions {
@@ -203,8 +216,8 @@
 		background: transparent;
 		border: none;
 		padding: 0.5rem;
-		flex: 1;
 		border-radius: 0.5rem;
+		flex: 1;
 		color: white;
 		font-size: 0.8rem;
 		border: 3px solid rgb(6, 6, 78);
@@ -233,16 +246,18 @@
 		background: rgb(91, 159, 255);
 	}
 
-	@media (max-width: 640px) {
+	@media (max-width: 450px) {
 		h1 {
 			font-size: 1.5rem;
-			text-wrap: nowrap;
+		}
+
+		.header-buttons p {
+			display: none;
 		}
 
 		.header-buttons button,
 		.enter-todo button {
-			font-size: 0.8rem;
-			text-wrap: nowrap;
+			font-size: 1rem;
 		}
 	}
 </style>
