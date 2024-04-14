@@ -188,7 +188,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: min-content
+		height: min-content;
 	}
 
 	.todo div p:last-of-type {
@@ -258,6 +258,11 @@
 
 		.header-buttons button {
 			font-size: 1rem;
+		}
+
+		.enter-todo input,
+		.enter-todo button {
+			font-size: 0.8rem;
 		}
 	}
 </style>
